@@ -46,51 +46,119 @@
 		<br />
 		
 		<form method="post" action="SimpleForm.php">
-			<label for="firstName">First Name:</label>
-			<input type="text" id="firstName" name="firstName" />
-			<br />
 			
-			<label for="lastName">Last Name:</label>
-			<input type="text" id="lastName" name="lastName" />
-			<br />
+			<fieldset>
+				<legend>Customer Information</legend>
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" required />
+				<br />
+				
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" required />
+				<br />
+				
+				<label for="address">Street Address:</label>
+				<input type="text" id="address" name="address" />
+				<br />
+				
+				<label for="city">City:</label>
+				<input type="text" id="city" name="city" />
+				<br />
+				
+				<label for="phoneNum">Phone Number:</label>
+				<input type="text" id="phoneNum" name="phoneNum" required />
+				<br />
+			</fieldset>
 			
-			<label for="address">Street Address:</label>
-			<input type="text" id="address" name="address" />
-			<br />
+			<fieldset>
+				<legend>Pizza Information</legend>
 			
-			<label for="city">City:</label>
-			<input type="text" id="city" name="city" />
-			<br />
+				<label for="crust">Type of Crust:</label>
+				<select id="crust" name="crust">
+					<option value="thin">Thin</option>
+					<option value="handTossed">Hand-Tossed</option>
+					<option value="deepDish">Deep Dish</option>
+				</select>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="pepperoni" id="pepperoni" />
+				<label for="pepperoni">Pepperoni</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="sausage" id="sausage" />
+				<label for="pepperoni">Sausage</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="beef" id="beef" />
+				<label for="pepperoni">Beef</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="grilledChicken" id="grilledChicken" />
+				<label for="pepperoni">Grilled Chicken</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="bacon" id="bacon" />
+				<label for="pepperoni">Bacon</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="mushrooms" id="mushrooms" />
+				<label for="pepperoni">Baby Portabello Mushrooms</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="olives" id="olives" />
+				<label for="pepperoni">Black Olives</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="tomatoes" id="tomatoes" />
+				<label for="pepperoni">Roma Tomatoes</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="greenPeppers" id="greenPeppers" />
+				<label for="pepperoni">Green Peppers</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="jalepenos" id="jalepenos" />
+				<label for="pepperoni">Jalepeno Peppers</label>
+				<br />
+				
+				<input type="checkbox" name="toppings" value="cheese" id="cheese" />
+				<label for="pepperoni">Extra Cheese</label>
+				<br />
+				
+				<label for="instruct">Special Instructions:</label>
+				<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
+				<br />
+				
+			</fieldset>
 			
-			<label for="phoneNum">Phone Number:</label>
-			<input type="text" id="phoneNum" name="phoneNum" />
-			<br />
+			<fieldset>
+				<legend>Payment Information</legend>
+				<p>How would you like to pay for your order?</p>
 			
-			<label for="instruct">Special Instructions:</label>
-			<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
-			<br />
-						
-			How would you like to pay for your order?
+				<input type="radio" id="cash" name="pay" value="cash" />
+				<label for="cash">Cash</label>
+				
+				<input type="radio" id="check" name="pay" value="check" />
+				<label for="check">Check</label>
+				
+				<input type="radio" id="card" name="pay" value="card" />
+				<label for="card">Credit Card:</label>
+									
+				<input type="password" id="cardNum" name="cardNum" />
+				
+				<br />
+				
+				<label>Would you like the driver to call before leaving the store?</label>
+				<input type="radio" id="yes" name="call" value="yes" checked />
+				<label for="yes">Yes</label>
+				
+				<input type="radio" id="no" name="call" value="no" />
+				<label for="no">No</label>
+				
+			</fieldset>
 			
-			<input type="radio" id="cash" name="pay" value="cash" />
-			<label for="cash">Cash</label>
-			
-			<input type="radio" id="check" name="pay" value="check" />
-			<label for="check">Check</label>
-			
-			<input type="radio" id="card" name="pay" value="card" />
-			<label for="card">Credit Card:</label>
-								
-			<input type="password" id="cardNum" name="cardNum" />
-			
-			<br />
-			
-			Would you like the driver to call before leaving the store?
-			<input type="radio" id="yes" name="call" value="yes" checked />
-			<label for="yes">Yes</label>
-			
-			<input type="radio" id="no" name="call" value="no" />
-			<label for="no">No</label>
+			<br />			
+			<input type="submit" name="submit" value="Place Order" />
 			
 		</form>
 		
