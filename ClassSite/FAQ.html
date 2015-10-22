@@ -6,85 +6,107 @@
 	
 	<body id="top">
 	
-		<h1>Frequently Asked Questions</h1>
-		
-		<hr />
-		
-		<a href="#thomas"><h5>How do I connect to the server/Thomas?</h5></a>
-		<a href="#deploy"><h5>How do I set up a deployment setting in Aptana?</h5></a>
-		<a href="#project"><h5>How do I create a new project in Aptana?</h5></a>
-		<a href="#publish"><h5>How do I publish my webpage to the server/Thomas?</h5></a>
-		<a href="#link"><h5>What link do I turn in for assignments?</h5></a>
-		<a href="#forbidden"><h5>When I view my page in a browser, it says Forbidden. How do I correct this?</h5></a>
-		
-		<br />
-		
-		<h5 id="thomas">How do I connect to the server/Thomas?</h5>
-		<ol>
-			<li>Use your Mac toolbar at the top of your screen and select <i>Go</i>.</li>
-			<li>Select <i>Connect to Server...</i> .</li>
-			<li>Enter the following into the server address field:<br /><i>smb://thomas.butler.edu</i></li>
-			<li>Select <i>Connect</i>.</li>
-			<li>Enter your Butler username and password.</li>
-		</ol>
-		
-		<h5 id="deploy">How do I set up a deployment setting in Aptana?</h5>
-		<ol>
-			<li>While in Aptana, click on the brown box icon and select <i>Run Web Deployment Wizard</i>.</li>
-			<li>The Deploy My Application window will appear. Select <i>FTP/SFTP/FTPS</i> and click <i>Next</i>.</li>
-			<li>Type in <i>Thomas</i> for the Site Name.</li>
-			<li>Select <i>SFTP</i> as your Protocol.</li>
-			<li>
-				Enter the following information in the Remote Info section:
+		<a href="index.html"><img class="logo" src="LogoLong.png" alt="CME219: Designing for the World Wide Web"/></a>
+		<div id="container">
+			<nav>
 				<ul>
-					<li>Server: <i>thomas.butler.edu</i></li>
-					<li>Username: <i>your username</i></li>
-					<li>Password: <i>your user password</i></li>
-					<li>Remote Path: <i>/home/username/public_html/your folder name</i></li>
-					<li>Click the Test button to see if the configuration was successful.</li>
+					<li><a href="CourseInfo.html">Information</a></li>
+					<li><a href="Schedule.html">Schedule</a></li>
+					<li><a href="Resources.html">Resources</a></li>
+					<li><a href="Roster.html">Roster</a></li>
+					<li><a href="Contact.html">Contact</a></li>
 				</ul>
-			</li>
-			<li>In the More Options section, change the Encoding to <i>UTF-8</i>.</li>
-			<li>Select <i>Finish</i>.</li>
-			<li>Now to upload your files, you will just select Upload after clicking on the same icon.</li>
-		</ol>
+			</nav>
 		
-		<h5 id="project">How do I create a new project in Aptana?</h5>
-		<ol>
-			<li>While in Aptana, click  on the New icon and select Web Project. You can also use the Aptana toolbar and select <i>File > New > Web Project</i>.</li>
-			<li>The New Web Project window will appear. Select Default project and click <i>Next ></i>.</li>
-			<li>Type in a Project name. (The location should automatically go to the workspace you initially set up in Aptana.</li>
-			<li>Click the <i>Finish</i> button</li>
-			<li>Your project will appear in both the Project Explorer and App Explorer.</li>
-		</ol>
 		
-		<h5 id="publish">How do I publish my webpage to the server/Thomas?</h5>
-		<ol>
-			<li>In Aptana, click on the brown box icon in the <i>App Explorer</i> toolbar.</li>
-		<li>Select <i>Upload</i>.</li>
-		</ol>
-		
-		<h5 id="link">What link do I turn in for assignments?</h5>
-		<ol>
-			<p>
-				You will need to turn in the link to your page on the server.... NOT from the location on your computer. For instance, if you publish a page called Code.html to your Class folder, on the server (Thomas), your URL will look like this: 
-			<br />
-			<i>http://blue.butler.edu/~username/Class/Code.html</i></p>
-		</ol>
-		
-		<h5 id="forbidden">When I view my page in a browser, it says Forbidden. How do I correct this?</h5>
-		<ol>
-			<li>While in Aptana, click on the terminal tab in the bottom of your application.</li>
-			<li>Enter the following text at the prompt:<br /><i>ssh username@thomas.butler.edu</i></li>
-			<li>You will then be asked for your password. Even though it appears as if you are not typing your password, but you are; the application is password-protecting your password for security reasons. </li>
-			<li>You should get the following prompt: <i>thomas%</i></li>
-			<li>Enter the following text:  <i>fix_account</i></li>
-			<li>Refresh your browser.</li>
-		</ol>
-		
-		<h5><a href="#top">Top of Page</a></h5>		
-		<hr />
+			<h1>Frequently Asked Questions</h1>
 			
+			<hr />
+			
+			<a href="#thomas"><h5>How do I connect to the server/Thomas?</h5></a>
+			<a href="#deploy"><h5>How do I set up a deployment setting in Aptana?</h5></a>
+			<a href="#project"><h5>How do I create a new project in Aptana?</h5></a>
+			<a href="#publish"><h5>How do I publish my webpage to the server/Thomas?</h5></a>
+			<a href="#link"><h5>What link do I turn in for assignments?</h5></a>
+			<a href="#forbidden"><h5>When I view my page in a browser, it says Forbidden. How do I correct this?</h5></a>
+			
+			<br />
+			
+			<h5 id="thomas">How do I connect to the server/Thomas?</h5>
+			<ol>
+				<li>Use your Mac toolbar at the top of your screen and select <i>Go</i>.</li>
+				<li>Select <i>Connect to Server...</i> .</li>
+				<li>Enter the following into the server address field:<br /><i>smb://thomas.butler.edu</i></li>
+				<li>Select <i>Connect</i>.</li>
+				<li>Enter your Butler username and password.</li>
+			</ol>
+			
+			<h5 id="deploy">How do I set up a deployment setting in Aptana?</h5>
+			<ol>
+				<li>While in Aptana, click on the brown box icon and select <i>Run Web Deployment Wizard</i>.</li>
+				<li>The Deploy My Application window will appear. Select <i>FTP/SFTP/FTPS</i> and click <i>Next</i>.</li>
+				<li>Type in <i>Thomas</i> for the Site Name.</li>
+				<li>Select <i>SFTP</i> as your Protocol.</li>
+				<li>
+					Enter the following information in the Remote Info section:
+					<ul>
+						<li>Server: <i>thomas.butler.edu</i></li>
+						<li>Username: <i>your username</i></li>
+						<li>Password: <i>your user password</i></li>
+						<li>Remote Path: <i>/home/username/public_html/your folder name</i></li>
+						<li>Click the Test button to see if the configuration was successful.</li>
+					</ul>
+				</li>
+				<li>In the More Options section, change the Encoding to <i>UTF-8</i>.</li>
+				<li>Select <i>Finish</i>.</li>
+				<li>Now to upload your files, you will just select Upload after clicking on the same icon.</li>
+			</ol>
+			
+			<h5 id="project">How do I create a new project in Aptana?</h5>
+			<ol>
+				<li>While in Aptana, click  on the New icon and select Web Project. You can also use the Aptana toolbar and select <i>File > New > Web Project</i>.</li>
+				<li>The New Web Project window will appear. Select Default project and click <i>Next ></i>.</li>
+				<li>Type in a Project name. (The location should automatically go to the workspace you initially set up in Aptana.</li>
+				<li>Click the <i>Finish</i> button</li>
+				<li>Your project will appear in both the Project Explorer and App Explorer.</li>
+			</ol>
+			
+			<h5 id="publish">How do I publish my webpage to the server/Thomas?</h5>
+			<ol>
+				<li>In Aptana, click on the brown box icon in the <i>App Explorer</i> toolbar.</li>
+			<li>Select <i>Upload</i>.</li>
+			</ol>
+			
+			<h5 id="link">What link do I turn in for assignments?</h5>
+			<ol>
+				<p>
+					You will need to turn in the link to your page on the server.... NOT from the location on your computer. For instance, if you publish a page called Code.html to your Class folder, on the server (Thomas), your URL will look like this: 
+				<br />
+				<i>http://blue.butler.edu/~username/Class/Code.html</i></p>
+			</ol>
+			
+			<h5 id="forbidden">When I view my page in a browser, it says Forbidden. How do I correct this?</h5>
+			<ol>
+				<li>While in Aptana, click on the terminal tab in the bottom of your application.</li>
+				<li>Enter the following text at the prompt:<br /><i>ssh username@thomas.butler.edu</i></li>
+				<li>You will then be asked for your password. Even though it appears as if you are not typing your password, but you are; the application is password-protecting your password for security reasons. </li>
+				<li>You should get the following prompt: <i>thomas%</i></li>
+				<li>Enter the following text:  <i>fix_account</i></li>
+				<li>Refresh your browser.</li>
+			</ol>
+			
+			<h5><a href="#top">Top of Page</a></h5>		
+			<hr />
+		</div>
+		
+		<footer>
+			<ul>
+				<li><a href="PClasses.html">Past Classes</a></li>
+				<li><a href="mailto:crector@butler.edu">Suggestions</a></li>
+				<li><a href="Contact.html">Comments</a></li>
+			</ul>
+		</footer>
+		
 	</body>
 	
 </html>
