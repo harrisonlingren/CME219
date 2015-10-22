@@ -1,0 +1,35 @@
+body {
+	background-color: rgb(175,175,175);
+}
+
+nav {
+	background-color: #c34f37;
+}
+
+nav a {
+	color:white;
+}
+
+h1 {
+	color:white;
+}
+
+hr {
+	background-color:white;
+}
+
+footer a {
+	color:rgba(255,255,255,0.7);
+}
+
+td {
+	background-color:white;
+}
+
+th {
+	background-color:#66cded;
+}
+
+form {
+	background-color:#a1d7bd;
+}
