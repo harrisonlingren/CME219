@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CME219 :: Contact Us</title>
+	</head>
+	<body>
+	
+		<a href="index.html"><img class="logo" src="LogoLong.png" alt="CME219: Designing for the World Wide Web"/></a>
+		<div id="container">
+			<nav>
+				<ul>
+					<li><a href="CourseInfo.html">Information</a></li>
+					<li><a href="Schedule.html">Schedule</a></li>
+					<li><a href="Resources.html">Resources</a></li>
+					<li><a href="Roster.html">Roster</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		
+			<h1>Contact Us</h1>
+			<hr />
+			<form method="post" action="scripts/simpleForm.php">
+				
+				<label for="first_name">First Name *</label>
+				<input type="text" name="first_name" id="first_name" required />
+				<br />
+				
+				<label for="last_name">Last Name *</label>
+				<input type="text" name="last_name" id="last_name" required />
+				<br />
+				
+				<label for="email">Email Address *</label>
+				<input type="text" name="email" id="email" required />
+				<br />
+				
+				<label for="telephone">Telephone Numbers</label>
+				<input type="text" name="telephone" id="telephone" />
+				<br />
+				
+				<label for="comments">Comments *</label>
+				<textarea id="comments" name="comments" required ></textarea>
+				<br />
+				
+				<input type="submit" name="submit" value="Submit" />
+			</form>
+			
+			<hr />
+		</div>
+		
+		<footer>
+			<ul>
+				<li><a href="PClasses.html">Past Classes</a></li>
+				<li><a href="mailto:crector@butler.edu">Suggestions</a></li>
+				<li><a href="Contact.html">Comments</a></li>
+			</ul>
+		</footer>
+		
+	</body>
+</html>
