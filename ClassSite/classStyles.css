@@ -1,14 +1,36 @@
+/* -- init -- */
+
+* { margin:0px; padding:0px;}
+
+
+
+/* -- Body Settings -- */
+
 body {
 	background-color: rgb(175,175,175);
 }
 
-nav {
-	background-color: #c34f37;
+#container {
+	width: 80%;
+	min-width: 600px;
+	border: 10px solid white;
+	box-shadow: 4px 4px 8px black;
+	margin: 0 auto;
 }
 
-nav a {
-	color:white;
+#content {
+	
+	padding: 10px 20px 30px 20px;
+	
 }
+
+#logo {
+	width: 325px;
+	margin: 50px auto 20px auto;
+}
+
+
+/* -- Header Settings -- */
 
 h1 {
 	color:white;
@@ -19,6 +41,7 @@ h1 {
 
 h2 {
 	font-size: 120%;
+	margin: 5px;
 }
 
 h3 {
@@ -27,36 +50,94 @@ h3 {
 
 h5 { 
 	font-size: 120%;
+	margin: 20px 0 5px 0;
 }
 
-
-/* -- End of Header Settings -- */
 
 
 /* -- Layout Settings -- */
 
 hr {
 	color:white;
+	height: 2px;
+	width: 75%;
+	border-style: none;
+	margin: 10px auto 0 auto;
 }
 
 footer a {
 	color:rgba(255,255,255,0.7);
 }
 
-/* -- End of Layout Settings -- */
+footer {
+	
+}
+
+nav {
+	background-color: #c34f37;
+	height: 35px;
+}
+
+nav li {
+	margin: 0 .5%;
+	line-height: 35px;
+	float: left;
+}
+
+nav a {
+	color:white;
+	padding: 0 10px;
+}
+
+footer li {
+	margin: 10px 10px 50px 10px;
+	float: left;
+}
+
 
 
 /* -- Table Settings -- */
 
+table {
+	margin-top: 25px;
+	width: 90%;
+	border: 1px solid black;
+}
 
 td {
 	background-color:white;
+	border: 1px solid black;
+	padding: 2px 5px;
 }
 
 th {
 	background-color:#66cded;
+	border: 1px solid black;
+	padding: 2px 5px;
 }
 
 form {
 	background-color:#a1d7bd;
+	width: 50%;
+	min-width: 300px;
+	border: 1px solid black;
+	padding: 20px;
+	box-shadow: 2px 2px 4px black;
+	margin: 20px auto;
+}
+
+label {
+	margin-right: 5px;
+}
+
+input {
+	margin-bottom: 5px;
+}
+
+
+
+/* -- Form Settings -- */
+
+#submit {
+	margin-top: 10px;
 }
