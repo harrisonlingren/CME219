@@ -12,15 +12,42 @@ nav a {
 
 h1 {
 	color:white;
+	font-size: 200%;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
 }
 
+h2 {
+	font-size: 120%;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+h5 { 
+	font-size: 120%;
+}
+
+
+/* -- End of Header Settings -- */
+
+
+/* -- Layout Settings -- */
+
 hr {
-	background-color:white;
+	color:white;
 }
 
 footer a {
 	color:rgba(255,255,255,0.7);
 }
+
+/* -- End of Layout Settings -- */
+
+
+/* -- Table Settings -- */
+
 
 td {
 	background-color:white;
