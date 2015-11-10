@@ -8,9 +8,11 @@
 
 body {
 	background-color: rgb(175,175,175);
+	font-family:"Calibri";
 }
 
 #container {
+	background-color:rgb(175,175,175);
 	width: 80%;
 	min-width: 600px;
 	border: 10px solid white;
@@ -95,6 +97,12 @@ footer li {
 }
 
 
+ul {
+	/* list-style-image:url(Images/greenCheck.png); */
+	list-style-type: square;
+}
+
+
 
 /* -- Table Settings -- */
 
@@ -102,6 +110,8 @@ table {
 	margin-top: 25px;
 	width: 90%;
 	border: 1px solid black;
+	/*border-spacing: 10px 25px;*/
+	border-collapse:collapse;
 }
 
 td {
