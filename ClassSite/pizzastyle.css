@@ -8,8 +8,16 @@
 
 body {
 	background-color: #8C0303;
-	font-family: "Verdana";
+	background-image: url(Images/Tony.png), url(Images/Redbackground.jpg);
+	background-repeat:no-repeat, repeat;
+	background-position: 10% 0%, none;
+	background-size: none, cover;
+	background-attachment: fixed, scroll;
+	
+	
+	font-family: Verdana, Geneva, sans-serif;
 	font-size: 10px;
+	margin: 0px 20px;
 }
 
 #instructions {
@@ -77,7 +85,8 @@ h1 {
 	text-shadow: 4px 4px #D95204;
 	text-align: center;
 	color: white;
-	font-size: 32px;
+	font-size: 36px;
+	margin-top: 10px;
 }
 
 h2 {
@@ -127,6 +136,11 @@ fieldset {
 	border-radius: 15px;
 	border: 1px solid black;
 	line-height: 300%;
+	background-color: rgba(255,255,255,.4);
+	background-image: url(Images/pizza.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right bottom;
 }
 
 .ingredients {
