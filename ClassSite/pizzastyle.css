@@ -26,6 +26,7 @@ body {
 	border: 1px solid black;
 	width: 200px;
 	padding: 10px;
+	float: right;
 }
 
 #instructions ol {
@@ -102,8 +103,15 @@ h3 {
 /* -- Form Settings -- */
 
 form {
-	
+	margin-top:40px;
 }
+
+.cInfo label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+
 
 input {
 	color: #3E5902;
@@ -117,6 +125,11 @@ input:focus {
 
 #info label {
 	width: 100px;
+}
+
+label {
+	clear: both; 
+	vertical-align: top;
 }
 
 legend {
@@ -135,7 +148,7 @@ fieldset {
 	padding: 10px 20px 20px 20px;
 	border-radius: 15px;
 	border: 1px solid black;
-	line-height: 300%;
+	line-height: 30px; vertical-align: top;
 	background-color: rgba(255,255,255,.4);
 	background-image: url(Images/pizza.png);
 	background-repeat: no-repeat;
@@ -145,6 +158,9 @@ fieldset {
 
 .ingredients {
 	width: 175px;
+	float: left;
+	line-height: 20px;
+	margin-bottom: 15px;
 }
 
 #submit {

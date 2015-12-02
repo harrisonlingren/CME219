@@ -80,7 +80,7 @@
 			
 			<form method="post" action="SimpleForm.php">
 				
-				<fieldset id="info">
+				<fieldset id="info" class="cInfo">
 					<legend>Customer Information</legend>
 					<label for="firstName">First Name:</label>
 					<input type="text" id="firstName" name="firstName" required />
@@ -167,10 +167,13 @@
 						<label for="cheese">Extra Cheese</label>
 						<br /><br />
 						
-						<label for="instruct">Special Instructions:</label>
-						<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
-						<br />
 					</div>
+					
+					<br /><br />
+					
+					<label for="instruct" class="ins">Special Instructions:</label>
+					<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
+					<br />
 					
 				</fieldset>
 				
@@ -207,5 +210,6 @@
 				
 			</form>
 		</div>
+		<br />
 	</body>
 </html>
