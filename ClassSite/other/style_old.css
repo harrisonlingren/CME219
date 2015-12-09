@@ -1,0 +1,209 @@
+/* -- init -- */
+
+* { margin:0px; padding:0px;}
+
+
+
+/* -- Body Settings -- */
+
+body {
+	background-image: url('Images/Blackpaper.jpg');
+	font-family:"Calibri";
+	font-size: 12pt;
+	line-height:150%;
+}
+
+#container {
+	background-color:rgb(175,175,175);
+	width: 80%;
+	min-width: 600px;
+	border: 10px solid white;
+	box-shadow: 4px 4px 8px black;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+#content {
+	
+	padding: 10px 20px 30px 20px;
+	
+}
+
+.logo {
+	text-align: center;
+	/*margin: 0 auto;*/
+	display: inline-block;
+}
+
+
+/* -- Header Settings -- */
+
+h1 {
+	color:white;
+	font-size: 200%;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+	font-size: 120%;
+	margin: 5px;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+h5 { 
+	font-size: 120%;
+	margin: 20px 0 5px 0;
+}
+
+span {
+	background-color: rgb(175,175,175);
+	position: relative;
+	z-index: 2;
+	padding: 0 20px;
+}
+
+hr {
+	background-color: white;
+	height: 2px;
+	width: 75%;
+	border-style: none;
+	margin: 10px auto 0;
+	position: relative;
+	top: 15px;
+}
+
+
+/* -- Layout Settings -- */
+
+hr {
+	color:white;
+	height: 2px;
+	width: 75%;
+	border-style: none;
+	margin: 10px auto 0 auto;
+}
+
+
+
+nav {
+	background-color: #c34f37;
+	height: 35px;
+	text-align: center;
+}
+
+nav li {
+	margin: 0 .5%;
+	line-height: 35px;
+	display:inline-block;
+	list-style: none;
+}
+
+nav a {
+	color:white;
+	padding: 0 10px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:125%;
+	padding: 0 10px;
+	display:block;
+}
+
+nav a:hover {
+	background-color:#A1D7BD;
+	color: #C34F37;
+}
+
+footer {
+	height: 35px;
+	text-align: center;
+}
+
+footer a {
+	color:rgba(255,255,255,0.7);
+	text-decoration: none;
+}
+
+footer li {
+	
+	line-height: 35px;
+	display:inline-block;
+	list-style: none;
+	text-align: center;
+	margin-left: 20px;
+}
+
+
+ul {
+	/* list-style-image:url(Images/greenCheck.png); */
+	list-style-type: square;
+}
+
+p+ul {
+	position: relative;
+	left: 20px;
+}
+
+
+
+/* -- Table Settings -- */
+
+table {
+	margin-top: 25px;
+	width: 90%;
+	border: 1px solid black;
+	/*border-spacing: 10px 25px;*/
+	border-collapse:collapse;
+}
+
+td {
+	background-color:white;
+	border: 1px solid black;
+	padding: 2px 5px;
+}
+
+th {
+	background-color:#66cded;
+	border: 1px solid black;
+	padding: 2px 5px;
+}
+
+form {
+	background-color:#a1d7bd;
+	width: 50%;
+	min-width: 300px;
+	border: 1px solid black;
+	padding: 20px;
+	box-shadow: 2px 2px 4px black;
+	margin: 20px auto;
+}
+
+label {
+	margin-right: 5px;
+}
+
+input {
+	margin-bottom: 5px;
+}
+
+
+
+/* -- Form Settings -- */
+
+input {
+	margin-bottom: 5px;
+}
+
+#submit {
+	margin-top: 10px;
+}
+
+.pic {
+	border: 5px solid white;
+	box-shadow: 2px 2px 4px black;
+	float: left;
+	margin: 5px 20px 40px 0;
+}

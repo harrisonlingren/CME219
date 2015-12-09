@@ -1,204 +1,282 @@
-/* -- init -- */
-
-* { margin:0px; padding:0px;}
-
-
-
-/* -- Body Settings -- */
+* {margin:0; padding:0;}
 
 body {
-	background-image: url('Images/Blackpaper.jpg');
-	font-family:"Calibri";
-	font-size: 12pt;
-	line-height:150%;
+    background-image:url(Images/Blackpaper.jpg);
+    font-family:Calibri, sans-serif;
+    font-size:12pt;
+    line-height:150%;
 }
 
-#container {
-	background-color:rgb(175,175,175);
-	width: 80%;
-	min-width: 600px;
-	border: 10px solid white;
-	box-shadow: 4px 4px 8px black;
-	margin: 0 auto;
-	padding-bottom: 40px;
-}
-
-#content {
-	
-	padding: 10px 20px 30px 20px;
-	
-}
-
-.logo {
-	text-align: center;
-	display: inline-block;
-}
-
-
-/* -- Header Settings -- */
-
-h1 {
-	color:white;
-	font-size: 200%;
-	text-align: center;
-	text-shadow: 2px 2px 2px black;
-}
-
-h2 {
-	font-size: 120%;
-	margin: 5px;
-}
-
-h3 {
-	font-size: 110%;
-}
-
-h5 { 
-	font-size: 120%;
-	margin: 20px 0 5px 0;
-}
-
-span {
-	background-color: rgb(175,175,175);
-	position: relative;
-	z-index: 2;
-	padding: 0 20px;
-}
-
-hr {
-	background-color: white;
-	height: 2px;
-	width: 75%;
-	border-style: none;
-	margin: 10px auto 0;
-	position: relative;
-	top: 15px;
-}
-
-
-/* -- Layout Settings -- */
-
-hr {
-	color:white;
-	height: 2px;
-	width: 75%;
-	border-style: none;
-	margin: 10px auto 0 auto;
-}
-
-footer a {
-	color:rgba(255,255,255,0.7);
-}
+/*-- Navigation Settings --*/
 
 nav {
-	background-color: #c34f37;
-	height: 35px;
-	text-align: center;
-}
-
-nav li {
-	margin: 0 .5%;
-	line-height: 35px;
-	display:inline-block;
-	list-style: none;
+    background-color:#C34F37;
+    height:35px;
+    text-align:center;
 }
 
 nav a {
-	color:white;
-	padding: 0 10px;
-	text-decoration:none;
-	text-transform:uppercase;
-	font-size:125%;
-	padding: 0 10px;
-	display:block;
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:125%;
+    padding:0 10px;
+    display:block;
 }
 
 nav a:hover {
-	background-color:#A1D7BD;
-	color: #C34F37;
+    background-color:#A1D7BD;
+    color:#C34F37;
+}
+
+nav li {
+    list-style:none;
+    margin:0px 0.5% 0;
+    line-height:35px;
+    display:inline-block;
+}
+/*-- End of Navigation Settings --*/
+
+/*-- Heading Settings --*/
+h1 {
+    color:white;
+    font-size:200%;
+    text-shadow:2px 2px 2px black;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-size:120%;
+    margin-bottom:5px;
+}
+
+h3 {
+    font-size:110%;
+}
+
+h5 {
+    font-size:120%;
+    margin:20px 0 5px;
+}
+
+h5 + p {
+	margin-left: 10px;
+}
+/*-- End of Heading Settings --*/
+
+/*-- Layout Settings --*/
+span {
+    background-color:rgb(175,175,175);
+    position:relative;
+    z-index:2;
+    padding:0 20px;
+}
+
+hr {
+    background-color:white;
+    height:2px;
+    width:75%;
+    border-style:none;
+    margin:10px auto 0;
+    position:relative;
+    top:15px;
 }
 
 footer {
-	height: 35px;
-	text-align: center;
+    text-align:center;
+}
+
+footer a {
+    color:rgba(255,255,255,0.7);
+    text-decoration:none;
+    
 }
 
 footer li {
-	
-	line-height: 35px;
-	display:inline-block;
-	list-style: none;
-	text-align: center;
+    list-style:none;
+    margin:10px 10px 50px;
+    display:inline-block;
 }
 
-
-ul {
-	/* list-style-image:url(Images/greenCheck.png); */
-	list-style-type: square;
+#container, #containerIndex {
+    background-color:rgb(175,175,175);
+    width:80%;
+    min-width:600px;
+    border:10px solid white;
+    box-shadow:4px 4px 8px black;
+    margin:0 auto;
+    padding-bottom:40px;
 }
 
-p+ul {
-	position: relative;
-	left: 20px;
+#content {
+    padding:10px 20px 30px;
+}
+    
+.logo {
+    display:block;
+    margin:50px auto 20px;
+    width:325px;
 }
 
+p + ul {
+    position:relative;
+    left:20px;
+}
 
+ol {
+	margin-left: 30px;
+}
 
-/* -- Table Settings -- */
+/*-- End of Layout Settings --*/
 
+/*-- Table Settings --*/
 table {
-	margin-top: 25px;
-	width: 90%;
-	border: 1px solid black;
-	/*border-spacing: 10px 25px;*/
-	border-collapse:collapse;
-}
-
-td {
-	background-color:white;
-	border: 1px solid black;
-	padding: 2px 5px;
+    margin-top:25px;
+    width:90%;
+    border:1px solid black;
+    border-collapse:collapse;
+  	margin: 0 auto;
 }
 
 th {
-	background-color:#66cded;
-	border: 1px solid black;
-	padding: 2px 5px;
+    background-color:#66CDED;
+    border:1px solid black;
+    margin:2px 5px 2px;
 }
 
+td {
+    background-color:white;
+    border:1px solid black;
+    margin:2px 5px 2px;
+    padding: 5px;
+}
+/*-- End of Table Settings --*/
+
+/*-- Form Settings --*/
 form {
-	background-color:#a1d7bd;
-	width: 50%;
-	min-width: 300px;
-	border: 1px solid black;
-	padding: 20px;
-	box-shadow: 2px 2px 4px black;
-	margin: 20px auto;
+    background-color:#A1D7BD;
+    width:50%;
+    min-width:300px;
+    border:1px solid black;
+    padding:20px;
+    box-shadow:2px 2px 4px black;
+    margin:20px auto;
 }
 
 label {
-	margin-right: 5px;
+    margin-right:5px;
+    display:inline-block;
+    width:140px;
+    text-align:right;
 }
 
 input {
-	margin-bottom: 5px;
-}
-
-
-
-/* -- Form Settings -- */
-
-input {
-	margin-bottom: 5px;
+    margin-bottom:5px;
 }
 
 #submit {
-	margin-top: 10px;
+    margin-top:10px;
+    position:relative;
+    left:147px;
+}
+/*-- End of Form Settings --*/
+
+/*-- Course Info Settings --*/
+.pic {
+    border:5px solid white;
+    box-shadow:2px 2px 4px black;
+    float:left;
+    margin:5px 20px 40px 0;
+}
+/*-- End of Course Info Settings --*/
+
+/*-- Resource Settings --*/
+.box {
+    background-color:#A1D7BD;
+    border:5px solid white;
+    box-shadow:2px 2px 4px black;
+    padding:10px;
+    line-height:150%;
+    margin-bottom:20px;
 }
 
-.pic {
-	border: 5px solid white;
-	box-shadow: 2px 2px 4px black;
-	float: left;
-	margin: 5px 20px 40px 0;
+.box ul li {
+	list-style: none;
 }
+
+/*-- End of Resource Settings --*/
+/*-- Index Settings --*/
+
+#containerIndex {
+    height:410px;
+    width:600px;
+}
+
+#containerIndex h3, #containerIndex h1 {
+    color:white;
+    text-shadow:2px 2px 2px black;
+    font-weight:bold;
+}
+
+#indexBoxOne, #indexBoxThree {
+    background-color:#30bbd9;
+    height:200px;
+    width:140px;
+    padding:10px;
+    border:4px solid white;
+    float:left;
+}
+
+#indexBoxOne{
+    border-left:none;
+}
+
+#indexBoxThree{
+    border-right:none;
+}
+
+#indexBoxTwo {
+    background-image:url(Images/html5css3.jpg);
+    height:220px;
+    width:272px;
+    background-size:cover;
+    background-position:center;
+    float:left;
+    border-bottom:4px solid white;
+    border-top:4px solid white;
+}
+
+#indexBoxFour{
+    background-color:#C34F37;
+    clear:both;
+    width:600px;
+    height:45px;
+    padding:5px 0;
+    font-size:14px;
+    border-bottom:4px solid white;
+}
+
+#indexBoxFour h1{
+    padding-top:10px;
+}
+
+#indexBoxFive{
+    background-color:#A1D7BD;
+    width:333px;
+    height:108px;
+    float:left;
+    padding:10px;
+    border-right:4px solid white;
+}
+
+#indexBoxSix{
+    background-image:url(Images/Aptana.jpg);
+    height:128px;
+    width:243px;
+    background-size:cover;
+    background-position:center;
+    float:left;
+}
+
+/*-- End of Index Settings --*/
