@@ -7,7 +7,7 @@
 	<body>
 		<header>
 			<!-- link to logo, title, etc -->
-			<a href="index.html"><img src="images/TonysLogo.jpg" width="267" height="165" /></a>
+			<a href="index.html"><img src="images/TonysLogo.png" width="268" height="160" /></a>
 			<br />
 			<nav>
 				<ul>
@@ -21,28 +21,32 @@
 			</nav>
 		</header>
 		
-		<h1>Customer Feedback</h1>
-
-		<p>Please use the form below to submit any feedback you have about our site.</p>
-
-		<form action="" method="post">
-			
-			<label for="fName">First Name:</label><input id="fName" type="text" /><br />
-			<label for="lName">Last Name:</label><input id="lName" type="text" /><br />
-			<label for="Email">Email address:</label><input id="Email" type="text" /><br /><br />
-			
-			<textarea placeholder="Type comments here..." id="comments"></textarea>
-			
-			<br /><br />
-			
-			<input type="submit" value="Submit" id="submit" />
-			
-		</form>
-
+		<div class="container">
+			<h1>Customer Feedback</h1>
+	
+			<p>Please use the form below to submit any feedback you have about our site.</p>
+	
+			<form action="" method="post">
+				
+				<label for="fName">First Name:</label><input id="fName" name="fName" type="text" /><br />
+				<label for="lName">Last Name:</label><input id="lName" name="lName" type="text" /><br />
+				<label for="Email">Email address:</label><input id="Email" name="Email" type="text" /><br /><br />
+				
+				<textarea placeholder="Type comments here..." name="comments"></textarea>
+				
+				<br /><br />
+				
+				<input type="submit" value="Submit" id="submit" />
+				
+			</form>
+		</div>
 		
 		<footer>
-			<br /><hr />
-			<p>&copy; 2015 Tony's Pizzeria | <a href="feedback.html">Submit Feedback</a> | Page built by <a href="http://harrison.lingren.co" target="_blank">Harrison Lingren</a></p>
-		</footer>
+			<ul>
+				<li>&copy; 2015 Tony's Pizzeria</li>
+				<li><a href="feedback.html">Submit Feedback</a></li>
+				<li>Page built by <a target="_blank" href="http://harrison.lingren.co">Harrison Lingren</a></li>
+			</ul>
+		</footer>			
 	</body>
 </html>

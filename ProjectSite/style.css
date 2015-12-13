@@ -1,0 +1,116 @@
+* {margin:0; padding:0;}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-color: #FFFFDB;
+}
+
+a {
+	color: white;
+}
+
+h1,h2,h3 {
+	margin-bottom: 20px;
+}
+
+header img {
+	margin: 20px;
+}
+
+nav {
+	background-color: #63A0CC;
+    height:35px;
+    text-align:center;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav li:hover {
+	background-color: #5F90B2;
+}
+
+nav li {
+	list-style:none;
+    margin:0px 0.5% 0;
+    line-height:35px;
+    display:inline-block;
+    padding: 0 10px;
+}
+
+footer {
+	background-color: #63A0CC;
+    height:35px;
+    text-align:center;
+}
+
+footer li {
+	list-style:none;
+    margin:0px 0.5% 0;
+    line-height:35px;
+    display:inline-block;
+    padding: 0 10px;
+}
+
+.container {
+	margin: 30px auto;
+	width: 700px;
+	background-color: #B2312E;
+	border-radius: 25px;
+	padding: 20px;
+	box-shadow: 4px 4px 0 0 #FF9795;
+}
+
+.storeTitle {
+	font-weight: bold;
+	font-size: larger;
+	margin-bottom: 10px;
+}
+
+.storeInfo {
+	float: left;
+	margin-right: 30px;
+	line-height: 150%;
+}
+
+.store {
+	margin-bottom: 40px
+	/*text-align: center;*/
+}
+
+.store table {
+	margin-left: 30px;
+}
+
+.store table th {
+	text-align: left;	
+}
+
+input[type="button"] {
+	border-radius: 10px;
+	background-color: #FF9795;
+	border: #FF9795;
+	padding: 5px 10px;
+	color: white;
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	border-radius: 10px;
+	background-color: #FF9795;
+	border: #FF9795;
+	padding: 5px 10px;
+	color: white;
+	font-weight: bold;
+}
+
+/** Color scheme:
+ * 	primary: 		#B2312E
+ * 	secondary:		#63A0CC
+ *  tertiary:		#FFFFDB
+ * 	primary 2:		#FF9795
+ * 	secondary 2:	#5F90B2
+ */

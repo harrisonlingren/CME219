@@ -7,7 +7,7 @@
 	<body>
 		<header>
 			<!-- link to logo, title, etc -->
-			<a href="index.html"><img src="images/TonysLogo.jpg" width="267" height="165" /></a>
+			<a href="index.html"><img src="images/TonysLogo.png" width="268" height="160" /></a>
 			<br />
 			<nav>
 				<ul>
@@ -23,165 +23,168 @@
 		
 
 		<!-- Page Content Here -->
-		
-		<h2>Available Options</h2>
-			<table>
-				<tr>
-					<th>Size and Crust</th><th>Cheese Only</th><th>Extra Toppings</th>
-				</tr>
-				<tr>
-					<td>Medium Original</td><td>$8.99</td><td>$1.49</td>
-				</tr>
-				<tr>
-					<td>Large Original</td><td>$11.99</td><td>$1.59</td>
-				</tr>
-				<tr>
-					<td>Extra Large Original</td><td>$13.99</td><td>$1.99</td>
-				</tr>
-				<tr>
-					<td>Large Thin</td><td>$11.99</td><td>$1.59</td>
-				</tr>
-			</table>
-			
-			<br />
-			<h2>Toppings</h2>
-			<table>
-				<tr>
-					<th colspan="2">Meats and Cheese</th><th colspan="2">Fresh-cut Veggies</th>
-				</tr>
-				<tr>
-					<td>Pepperoni</td><td>Sausage</td><td>Green Peppers</td><td>Onions</td>
-				</tr>
-				<tr>
-					<td>Beef</td><td>Grilled Chicken</td><td>Jalepeno Peppers</td><td>Black Olives</td>
-				</tr>
-				<tr>
-					<td>Bacon</td><td>Extra Cheese</td><td>Roma Tomatoes</td><td>Baby Portabello Mushrooms</td>
-				</tr>
-			</table>
-			<br />
-			
-			<form method="post" action="SimpleForm.php">
+		<div class="container">
+			<h2>Available Options</h2>
+				<table>
+					<tr>
+						<th>Size and Crust</th><th>Cheese Only</th><th>Extra Toppings</th>
+					</tr>
+					<tr>
+						<td>Medium Original</td><td>$8.99</td><td>$1.49</td>
+					</tr>
+					<tr>
+						<td>Large Original</td><td>$11.99</td><td>$1.59</td>
+					</tr>
+					<tr>
+						<td>Extra Large Original</td><td>$13.99</td><td>$1.99</td>
+					</tr>
+					<tr>
+						<td>Large Thin</td><td>$11.99</td><td>$1.59</td>
+					</tr>
+				</table>
 				
-				<fieldset>
-					<legend>Customer Information</legend>
-					<label for="firstName">First Name:</label>
-					<input type="text" id="firstName" name="firstName" required />
-					<br />
-					
-					<label for="lastName">Last Name:</label>
-					<input type="text" id="lastName" name="lastName" required />
-					<br />
-					
-					<label for="address">Street Address:</label>
-					<input type="text" id="address" name="address" />
-					<br />
-					
-					<label for="city">City:</label>
-					<input type="text" id="city" name="city" />
-					<br />
-					
-					<label for="phoneNum">Phone Number:</label>
-					<input type="text" id="phoneNum" name="phoneNum" required />
-					<br />
-				</fieldset>
+				<br />
+				<h2>Toppings</h2>
+				<table>
+					<tr>
+						<th colspan="2">Meats and Cheese</th><th colspan="2">Fresh-cut Veggies</th>
+					</tr>
+					<tr>
+						<td>Pepperoni</td><td>Sausage</td><td>Green Peppers</td><td>Onions</td>
+					</tr>
+					<tr>
+						<td>Beef</td><td>Grilled Chicken</td><td>Jalepeno Peppers</td><td>Black Olives</td>
+					</tr>
+					<tr>
+						<td>Bacon</td><td>Extra Cheese</td><td>Roma Tomatoes</td><td>Baby Portabello Mushrooms</td>
+					</tr>
+				</table>
+				<br />
 				
-				<fieldset>
-					<legend>Pizza Information</legend>
-				
-					<label for="crust">Type of Crust:</label>
-					<select id="crust" name="crust">
-						<option value="thin">Thin</option>
-						<option value="handTossed">Hand-Tossed</option>
-						<option value="deepDish">Deep Dish</option>
-					</select>
-					<br />
+				<form method="post" action="SimpleForm.php">
 					
-					<input type="checkbox" name="toppings" value="pepperoni" id="pepperoni" />
-					<label for="pepperoni">Pepperoni</label>
-					<br />
+					<fieldset>
+						<legend>Customer Information</legend>
+						<label for="firstName">First Name:</label>
+						<input type="text" id="firstName" name="firstName" required />
+						<br />
+						
+						<label for="lastName">Last Name:</label>
+						<input type="text" id="lastName" name="lastName" required />
+						<br />
+						
+						<label for="address">Street Address:</label>
+						<input type="text" id="address" name="address" />
+						<br />
+						
+						<label for="city">City:</label>
+						<input type="text" id="city" name="city" />
+						<br />
+						
+						<label for="phoneNum">Phone Number:</label>
+						<input type="text" id="phoneNum" name="phoneNum" required />
+						<br />
+					</fieldset>
 					
-					<input type="checkbox" name="toppings" value="sausage" id="sausage" />
-					<label for="sausage">Sausage</label>
-					<br />
+					<fieldset>
+						<legend>Pizza Information</legend>
 					
-					<input type="checkbox" name="toppings" value="beef" id="beef" />
-					<label for="beef">Beef</label>
-					<br />
+						<label for="crust">Type of Crust:</label>
+						<select id="crust" name="crust">
+							<option value="thin">Thin</option>
+							<option value="handTossed">Hand-Tossed</option>
+							<option value="deepDish">Deep Dish</option>
+						</select>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="pepperoni" id="pepperoni" />
+						<label for="pepperoni">Pepperoni</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="sausage" id="sausage" />
+						<label for="sausage">Sausage</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="beef" id="beef" />
+						<label for="beef">Beef</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="grilledChicken" id="grilledChicken" />
+						<label for="grilledChicken">Grilled Chicken</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="bacon" id="bacon" />
+						<label for="bacon">Bacon</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="mushrooms" id="mushrooms" />
+						<label for="mushrooms">Baby Portabello Mushrooms</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="olives" id="olives" />
+						<label for="olives">Black Olives</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="tomatoes" id="tomatoes" />
+						<label for="tomatoes">Roma Tomatoes</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="greenPeppers" id="greenPeppers" />
+						<label for="greenPeppers">Green Peppers</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="jalepenos" id="jalepenos" />
+						<label for="jalepenos">Jalepeno Peppers</label>
+						<br />
+						
+						<input type="checkbox" name="toppings" value="cheese" id="cheese" />
+						<label for="cheese">Extra Cheese</label>
+						<br />
+						
+						<label for="instruct">Special Instructions:</label>
+						<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
+						<br />
+						
+					</fieldset>
 					
-					<input type="checkbox" name="toppings" value="grilledChicken" id="grilledChicken" />
-					<label for="grilledChicken">Grilled Chicken</label>
-					<br />
+					<fieldset>
+						<legend>Payment Information</legend>
+						<p>How would you like to pay for your order?</p>
 					
-					<input type="checkbox" name="toppings" value="bacon" id="bacon" />
-					<label for="bacon">Bacon</label>
-					<br />
+						<input type="radio" id="cash" name="pay" value="cash" />
+						<label for="cash">Cash</label>
+						
+						<input type="radio" id="check" name="pay" value="check" />
+						<label for="check">Check</label>
+						
+						<input type="radio" id="card" name="pay" value="card" />
+						<label for="card">Credit Card:</label>
+											
+						<input type="password" id="cardNum" name="cardNum" />
+						
+						<br />
+						
+						<label>Would you like the driver to call before leaving the store?</label>
+						<input type="radio" id="yes" name="call" value="yes" checked />
+						<label for="yes">Yes</label>
+						
+						<input type="radio" id="no" name="call" value="no" />
+						<label for="no">No</label>
+						
+					</fieldset>
 					
-					<input type="checkbox" name="toppings" value="mushrooms" id="mushrooms" />
-					<label for="mushrooms">Baby Portabello Mushrooms</label>
-					<br />
+					<br />			
+					<input type="submit" name="submit" value="Place Order" />
 					
-					<input type="checkbox" name="toppings" value="olives" id="olives" />
-					<label for="olives">Black Olives</label>
-					<br />
-					
-					<input type="checkbox" name="toppings" value="tomatoes" id="tomatoes" />
-					<label for="tomatoes">Roma Tomatoes</label>
-					<br />
-					
-					<input type="checkbox" name="toppings" value="greenPeppers" id="greenPeppers" />
-					<label for="greenPeppers">Green Peppers</label>
-					<br />
-					
-					<input type="checkbox" name="toppings" value="jalepenos" id="jalepenos" />
-					<label for="jalepenos">Jalepeno Peppers</label>
-					<br />
-					
-					<input type="checkbox" name="toppings" value="cheese" id="cheese" />
-					<label for="cheese">Extra Cheese</label>
-					<br />
-					
-					<label for="instruct">Special Instructions:</label>
-					<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
-					<br />
-					
-				</fieldset>
-				
-				<fieldset>
-					<legend>Payment Information</legend>
-					<p>How would you like to pay for your order?</p>
-				
-					<input type="radio" id="cash" name="pay" value="cash" />
-					<label for="cash">Cash</label>
-					
-					<input type="radio" id="check" name="pay" value="check" />
-					<label for="check">Check</label>
-					
-					<input type="radio" id="card" name="pay" value="card" />
-					<label for="card">Credit Card:</label>
-										
-					<input type="password" id="cardNum" name="cardNum" />
-					
-					<br />
-					
-					<label>Would you like the driver to call before leaving the store?</label>
-					<input type="radio" id="yes" name="call" value="yes" checked />
-					<label for="yes">Yes</label>
-					
-					<input type="radio" id="no" name="call" value="no" />
-					<label for="no">No</label>
-					
-				</fieldset>
-				
-				<br />			
-				<input type="submit" name="submit" value="Place Order" />
-				
-			</form>
-
+				</form>
+			</div>
 		
 		<footer>
-			<br /><hr />
-			<p>&copy; 2015 Tony's Pizzeria | <a href="feedback.html">Submit Feedback</a> | Page built by <a target="_blank" href="http://harrison.lingren.co">Harrison Lingren</a></p>
-		</footer>
+			<ul>
+				<li>&copy; 2015 Tony's Pizzeria</li>
+				<li><a href="feedback.html">Submit Feedback</a></li>
+				<li>Page built by <a target="_blank" href="http://harrison.lingren.co">Harrison Lingren</a></li>
+			</ul>
+		</footer>			
 	</body>
 </html>
