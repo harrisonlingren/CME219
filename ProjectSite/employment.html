@@ -25,7 +25,48 @@
 		<!-- Page Content Here -->
 		<div class="container">
 			
+			<h1>Employment</h1>
 			
+			<p>Tony’s Pizzeria is a growing family style pizza restaurant chain and we are always looking for great staff. Whether you’re a driver, a cashier, a pie maker or even a manager, it’s about the team and it’s about having fun. If you are interested, please start by filling out our employment form here. We’ll get in touch with you from there! </p>
+			
+			<br/>
+			
+			<form action="" method="post">
+				
+				<fieldset>
+					<legend>Personal Information</legend>
+					<span class="cInfo"><label for="fName">First Name*:</label><input type="text" id="fName" required autofocus/><br/>
+						<label for="lName">Last Name*:</label><input type="text" id="lName" required/><br/>
+						<label for="phone">Phone Number*:</label><input id="phone" type="text" id="phone" required/><br/>
+						<label for="email">Email Address:</label><input type="text" id="email" required/><br /><br />
+					</span>
+				</fieldset><br />
+				
+				<fieldset>
+					<legend>Position Details</legend>
+					<span class="cInfo"><label for="pos">Position:</label>
+						<select id="pos">
+							<option value="driver">Driver</option>
+							<option value="inStore">In-Store</option>
+							<option value="manager">Manager</option>
+						</select><br/>
+						<label for="avail">Availability:</label>
+						<select id="avail">
+							<option value="day">Days</option>
+							<option value="evening">Evenings</option>
+							<option value="late">Late Nights</option>
+						</select><br /><br />
+					</span>
+					<label for="age">Are you over the age of 18?</label>
+					<input type="radio" id="ageY"/><label for="ageY">Yes</label>
+					<input type="radio" id="ageN" checked/><label for="ageN">No</label><br /><br />
+					
+					<label for="why">Why should we hire you?</label>
+					<textarea placeholder="Type comments here..." id="why"></textarea>
+				</fieldset><br />
+
+				<input type="submit" value="Submit" />
+			</form>
 			
 		</div>
 		

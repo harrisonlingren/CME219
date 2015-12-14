@@ -26,15 +26,16 @@
 	
 			<p>Please use the form below to submit any feedback you have about our site.</p>
 	
-			<form action="" method="post">
+			<form action="" method="post" class="cInfo">
 				
-				<label for="fName">First Name:</label><input id="fName" name="fName" type="text" /><br />
-				<label for="lName">Last Name:</label><input id="lName" name="lName" type="text" /><br />
-				<label for="Email">Email address:</label><input id="Email" name="Email" type="text" /><br /><br />
-				
-				<textarea placeholder="Type comments here..." name="comments"></textarea>
-				
-				<br /><br />
+				<fieldset>
+					<label for="fName">First Name:</label><input id="fName" name="fName" type="text" /><br />
+					<label for="lName">Last Name:</label><input id="lName" name="lName" type="text" /><br />
+					<label for="Email">Email address:</label><input id="Email" name="Email" type="text" /><br /><br />
+					
+					<label for="comment">Comments:</label><textarea placeholder="Type comments here..." id="comment" name="comments"></textarea>
+				</fieldset>
+				<br />
 				
 				<input type="submit" value="Submit" id="submit" />
 				

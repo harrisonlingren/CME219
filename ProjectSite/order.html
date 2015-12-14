@@ -24,6 +24,20 @@
 
 		<!-- Page Content Here -->
 		<div class="container">
+			
+			<h1>Order Form</h1>
+			
+			<div id="instructions">
+				<h3>How it works:</h3>
+				<hr />
+				<ol>
+					<li>Take a look at our long list of toppings. We have everything from spicy italian sausage to peppers.</li>
+					<li>Fill in your information below. Enter in your pizza information ... everything from the size, crust type, and any combination of toppings.</li>
+					<li>Enter in your personal and payment information. This will allow us to deliver your pizza as quickly as possible.</li>
+					<li>Wait a few minutes for our driver to deliver your pizza.. hot and fresh to your door.</li>
+				</ol>
+			</div><br />
+			
 			<h2>Available Options</h2>
 				<table>
 					<tr>
@@ -63,7 +77,7 @@
 				
 				<form method="post" action="SimpleForm.php">
 					
-					<fieldset>
+					<fieldset class="cInfo">
 						<legend>Customer Information</legend>
 						<label for="firstName">First Name:</label>
 						<input type="text" id="firstName" name="firstName" required />
@@ -84,7 +98,7 @@
 						<label for="phoneNum">Phone Number:</label>
 						<input type="text" id="phoneNum" name="phoneNum" required />
 						<br />
-					</fieldset>
+					</fieldset><br />
 					
 					<fieldset>
 						<legend>Pizza Information</legend>
@@ -97,55 +111,58 @@
 						</select>
 						<br />
 						
-						<input type="checkbox" name="toppings" value="pepperoni" id="pepperoni" />
-						<label for="pepperoni">Pepperoni</label>
-						<br />
+						<div class="check">
+							<input type="checkbox" name="toppings" value="pepperoni" id="pepperoni" />
+							<label for="pepperoni">Pepperoni</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="sausage" id="sausage" />
+							<label for="sausage">Sausage</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="beef" id="beef" />
+							<label for="beef">Beef</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="grilledChicken" id="grilledChicken" />
+							<label for="grilledChicken">Grilled Chicken</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="bacon" id="bacon" />
+							<label for="bacon">Bacon</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="mushrooms" id="mushrooms" />
+							<label for="mushrooms">Baby Portabello Mushrooms</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="olives" id="olives" />
+							<label for="olives">Black Olives</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="tomatoes" id="tomatoes" />
+							<label for="tomatoes">Roma Tomatoes</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="greenPeppers" id="greenPeppers" />
+							<label for="greenPeppers">Green Peppers</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="jalepenos" id="jalepenos" />
+							<label for="jalepenos">Jalepeno Peppers</label>
+							<br />
+							
+							<input type="checkbox" name="toppings" value="cheese" id="cheese" />
+							<label for="cheese">Extra Cheese</label>
+							<br />
 						
-						<input type="checkbox" name="toppings" value="sausage" id="sausage" />
-						<label for="sausage">Sausage</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="beef" id="beef" />
-						<label for="beef">Beef</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="grilledChicken" id="grilledChicken" />
-						<label for="grilledChicken">Grilled Chicken</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="bacon" id="bacon" />
-						<label for="bacon">Bacon</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="mushrooms" id="mushrooms" />
-						<label for="mushrooms">Baby Portabello Mushrooms</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="olives" id="olives" />
-						<label for="olives">Black Olives</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="tomatoes" id="tomatoes" />
-						<label for="tomatoes">Roma Tomatoes</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="greenPeppers" id="greenPeppers" />
-						<label for="greenPeppers">Green Peppers</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="jalepenos" id="jalepenos" />
-						<label for="jalepenos">Jalepeno Peppers</label>
-						<br />
-						
-						<input type="checkbox" name="toppings" value="cheese" id="cheese" />
-						<label for="cheese">Extra Cheese</label>
-						<br />
+						</div>
 						
 						<label for="instruct">Special Instructions:</label>
-						<textarea id="instruct" name="instruct" >How would you like your pizza cut?</textarea>
+						<textarea id="instruct" name="instruct" placeholder="How would you like your pizza cut?"></textarea>
 						<br />
 						
-					</fieldset>
+					</fieldset><br />
 					
 					<fieldset>
 						<legend>Payment Information</legend>
